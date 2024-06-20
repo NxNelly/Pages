@@ -226,11 +226,27 @@ open CMD Terminal - rightclick on folder integrated terminal
 - Typescript has a static typing feature
   _(Variables are bound to one data type and cant be changed during execution, promotes type safety)_
 - Typescript supports interfaces
+- JavaScript is easier to learn
 
 __TypeScript makes it easier to write accurate code more quickly and catch bugs prior to runtime__
 
-## Operators
+## [Operators](https://www.tutorialspoint.com/typescript/typescript_operators.htm)
 
 __7 + 5 = 12__
 7, 5, and 12 are __operands__, while + and = are __operators__
+
+- Arithmetic Operators (+, -, *, / ...)
+- Relational Operators (elationship between two entities. Relational operators return a Boolean value - <, >, <=, >= ...)
+- Logical Operators ( &&(And), ||(OR), !(NOT) - (A > 10 || B >10) , !(A >10 ))
+- Bitwise Operators (Uses binary, performs operator on each bit - &, |, ^...)
+  
+  E.g
+  
+A=5 B=3
+
+A=000000110 B=00000011
+
+(A&B) is 00000010 is __2__
+
+- Assignment Operators (=, +=, -=... e.g. : C + = A equivalent to C = C + A)
 
