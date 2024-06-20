@@ -186,3 +186,51 @@ Defines different type of content on a Webbrowser, using angle brackets (< >)
 - Meta tags (non visible information - meta, link)
 - style and programming tags (style, programming)
 - general tags (div, span, header ...)
+
+20.06.24
+
+## Javascript
+
+Javascript is the most used programming language
+
+Link Javascript to html
+inside html (head):
+ ```
+<script src="FirstCode.js"></script>
+
+```
+## Typescript
+typescript is more structured but mostly similar to Typescript
+
+- to activate typescript
+
+open CMD Terminal - rightclick on folder integrated terminal
+	
+ type: tsc --init
+
+- create .ts file
+
+- Ctr+Shift+B (Run Build Task)
+- tsc: build
+- tsc: watch
+
+  _now it creates a js file that uses the typescript code_
+  
+- to check if working
+  ```
+  console.log("Hello World from Typescript, compiler is working");
+  ```
+
+### Difference JavaScript and TypeScript
+- Typescript is a Object-oriented language
+- Typescript has a static typing feature
+  _(Variables are bound to one data type and cant be changed during execution, promotes type safety)_
+- Typescript supports interfaces
+
+__TypeScript makes it easier to write accurate code more quickly and catch bugs prior to runtime__
+
+## Operators
+
+__7 + 5 = 12__
+7, 5, and 12 are __operands__, while + and = are __operators__
+
