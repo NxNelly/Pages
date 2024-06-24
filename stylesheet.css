@@ -1,0 +1,21 @@
+table {
+
+    width: 70%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+
+   padding: 8px; 
+}
+
+th{
+    
+    background-color: #fde9f6;
+}
+
+.TopLine {
+
+    background-color: rgb(133, 100, 100);
+}
