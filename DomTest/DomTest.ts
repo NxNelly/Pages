@@ -3,9 +3,9 @@ console.log("Hello World!")
 const randomBackground = Math.floor(Math.random()*16777200).toString(16);
 document.body.style.backgroundColor = "#" + randomBackground; //random Backgroud
 
-let canvas = document.querySelector("canvas");
+/*let canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
-canvas.height = 300px;
+canvas.height = 300px;*/
 
 let repeatNumber:number = Math.floor(Math.random()*100) // generate random repeat lengh
 
