@@ -250,3 +250,23 @@ A=000000110 B=00000011
 
 - Assignment Operators (=, +=, -=... e.g. : C + = A equivalent to C = C + A)
 
+(L04.4)
+24.06.24
+
+## Arrays
+- Komplexe Datentypen - Sammlung an Informationen 
+- homogen - gleiche Datentypen
+- können primitive und komplexe Datentyben beinhalten (verschachtelung)
+
+### In JS:
+- "[]" oder "new Array()"
+- in Klammern Liste von Elementen mit Komma getrennt
+  e.g.: let a = [7, true, "Hallo"]
+- Information wird abgefragt mit Parameter [index] (index = zahl startet bei 0)
+  e.g.: a[1]
+
+###  Assoziatives Array:
+- verknüpfung mit Schlüsseln
+- let s = {"zahl": 7, "wahr": true, text: "Hallo"}
+- Ausgabe: Parameter.Schlüssel
+- e.g.: s.zahl
