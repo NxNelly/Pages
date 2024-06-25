@@ -270,3 +270,9 @@ A=000000110 B=00000011
 - let s = {"zahl": 7, "wahr": true, text: "Hallo"}
 - Ausgabe: Parameter.Schlüssel
 - e.g.: s.zahl
+
+25.06.24
+DomTest, loops,
+
+Appendix:
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/
