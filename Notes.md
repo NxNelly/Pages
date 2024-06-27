@@ -270,3 +270,33 @@ A=000000110 B=00000011
 - let s = {"zahl": 7, "wahr": true, text: "Hallo"}
 - Ausgabe: Parameter.Schlüssel
 - e.g.: s.zahl
+
+25.06.24
+DomTest, loops,
+
+Appendix:
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/
+
+## Events
+
+![image](https://github.com/NxNelly/Pages/assets/173050947/7703193b-e520-431e-b515-603e6e5df12b)
+
+```
+newSpan.addEventListener("mouseover", hndClick)
+
+}while(i < repeatNumber); // title loop
+
+document.body.addEventListener("mouseover",hndClick);
+
+function hndClick(_event: Event): void {
+
+console.log(_event.currentTarget);
+    let target:HTMLElement = <HTMLElement>_event.target;
+    if (target == document.body)
+        return;
+    target.textContent ="You clicked here";
+    target.style.backgroundColor = "white";
+    target.style.fontSize = "x-large";
+}
+```
+
