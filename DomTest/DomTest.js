@@ -2,6 +2,7 @@
 console.log("Hello World!");
 const randomBackground = Math.floor(Math.random() * 16777200).toString(16);
 document.body.style.backgroundColor = "#" + randomBackground; //random Backgroud
+let i = 0;
 let repeatNumber = Math.floor(Math.random() * 100); // generate random repeat lengh
 let spanElement = document.querySelector("span#idHello");
 spanElement.textContent = "World"; // change span to world
@@ -10,17 +11,17 @@ function getRandomColor() {
     return randomColor;
 }
 function getRandomInt() {
-    let randomInt = Math.floor(Math.random() * 500 + 1);
+    return Math.floor(Math.random() * 100);
 }
-let i = 0;
 do {
     i++;
     let newSpan = document.createElement("span");
     newSpan.textContent = "Hello";
     document.body.appendChild(newSpan);
-    //newSpan.style.postition = "relative";
     newSpan.style.left;
     newSpan.style.backgroundColor = "#" + getRandomColor();
+    let fontsize = (getRandomInt());
+    newSpan.style.fontSize = `${fontsize}px`;
     newSpan.addEventListener("mouseover", hndClick);
 } while (i < repeatNumber); // title loop
 document.body.addEventListener("mouseover", hndClick);
@@ -60,15 +61,13 @@ do{
 */
 function createRectangle() {
     let rectangle = document.createElement('div');
-    let width = 50;
-    let height = 50;
     let color = "#" + getRandomColor();
-    rectangle.style.width = `${width}px`;
-    rectangle.style.height = `${height}px`;
+    rectangle.style.width = `50px`;
+    rectangle.style.height = `50px`;
     rectangle.style.backgroundColor = color;
     rectangle.style.position = 'absolute';
-    rectangle.style.left = `${getRandomInt(0, window.innerWidth - width)}px`;
-    rectangle.style.top = `${getRandomInt(0, window.innerHeight - height)}px`;
+    rectangle.style.left = `${getRandomInt()}px`;
+    rectangle.style.top = `${getRandomInt()}px`;
     document.body.appendChild(rectangle);
     for (let i = 0; i < 100; i++) {
         createRectangle();

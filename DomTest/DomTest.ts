@@ -3,6 +3,7 @@ console.log("Hello World!")
 const randomBackground = Math.floor(Math.random()*16777200).toString(16);
 document.body.style.backgroundColor = "#" + randomBackground; //random Backgroud
 
+let i:number = 0;
 
 let repeatNumber:number = Math.floor(Math.random()*100) // generate random repeat lengh
 
@@ -14,23 +15,22 @@ function getRandomColor(){
     let randomColor:string = Math.floor(Math.random()*16777215).toString(16);
     return randomColor
 }
+    function getRandomInt(): number {
+        return Math.floor(Math.random() *100);
+     }
 
-function getRandomInt(){
-
-    let randomInt:number = Math.floor(Math.random() *500 + 1)! ;
-}
-
-let i:number = 0;
 do{
     i++;
 
     let newSpan: HTMLSpanElement = document.createElement("span");
     newSpan.textContent="Hello";
     document.body.appendChild(newSpan);
-//newSpan.style.postition = "relative";
-newSpan.style.left;
-newSpan.style.backgroundColor = "#" + getRandomColor();  
-newSpan.addEventListener("mouseover", hndClick)
+
+    newSpan.style.left;
+    newSpan.style.backgroundColor = "#" + getRandomColor();
+    let fontsize:number = (getRandomInt())
+    newSpan.style.fontSize = `${fontsize}px`;
+    newSpan.addEventListener("mouseover", hndClick)
 
 }while(i < repeatNumber); // title loop
 
@@ -80,16 +80,14 @@ do{
 
 function createRectangle() {
     let rectangle:HTMLElement = document.createElement('div');
-    let width:number = 50;
-    let height:number = 50;
     let color:string = "#" + getRandomColor();
 
-    rectangle.style.width = `${width}px`;
-    rectangle.style.height = `${height}px`;
+    rectangle.style.width = `50px`;
+    rectangle.style.height = `50px`;
     rectangle.style.backgroundColor = color;
     rectangle.style.position = 'absolute';
-    rectangle.style.left = `${getRandomInt(0, window.innerWidth - width)}px`;
-    rectangle.style.top = `${getRandomInt(0, window.innerHeight - height)}px`;
+    rectangle.style.left = `${getRandomInt()}px`;
+    rectangle.style.top = `${getRandomInt()}px`;
 
     document.body.appendChild(rectangle);
 
