@@ -379,5 +379,24 @@ gradient.addColorStop(1, "gold");
 crc2.fillStyle = gradient;
 crc2.fillRect(0, 0, 200, 100);
 ```
-  
+## Interfaces
+- Datatypes that are constructet manualy
+- keys are declared freely
+
+ ```
+  interface MapStringToBoolean {
+    [key: string]: boolean;
+}
+let a: MapStringToBoolean = {"wert1": true, "wert2": false};
+```
+or
+```
+interface VectorWithMeaning {
+    x: number;
+    y: number;
+    meaning: string;
+}
+let vector: VectorWithMeaning = {x: 12.4, y: -7.2, meaning: "Ortsvektor"};
+```
+
 
