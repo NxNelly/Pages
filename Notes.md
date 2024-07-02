@@ -274,9 +274,15 @@ A=000000110 B=00000011
 25.06.24
 DomTest, loops,
 
+## Dom-Elements
+
+- A DOM element is something like a DIV, HTML, BODY element on a page. You can add classes to all of these using CSS, or interact with them using JS
+
 Appendix:
 https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/
 
+
+(L5.2)
 ## Events
 
 ![image](https://github.com/NxNelly/Pages/assets/173050947/7703193b-e520-431e-b515-603e6e5df12b)
@@ -299,4 +305,20 @@ console.log(_event.currentTarget);
     target.style.fontSize = "x-large";
 }
 ```
+(L6.1)
 
+## Canvas
+
+- Canvas is like a drawing board
+- shapes, ext, olor, gradients can be "drawn" on the canvas using draw commands like:
+  	- eg. path, rect, fill, stroke, gradient ...
+  
+## Canvas rendering context
+
+- a <canvas></canvas> Element must be placed in html
+- in typescripr the rendering context must be requested
+
+ ```
+let canvas: HTMLCanvasElement = document.querySelector("canvas");
+let crc2: CanvasRenderingContext2D = canvas.getContext("2d");
+```
