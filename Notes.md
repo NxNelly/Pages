@@ -322,3 +322,62 @@ console.log(_event.currentTarget);
 let canvas: HTMLCanvasElement = document.querySelector("canvas");
 let crc2: CanvasRenderingContext2D = canvas.getContext("2d");
 ```
+
+### Vector
+- .stroke(), .fill()
+
+### Arc
+creates circles
+```
+crc2.beginPath();
+crc2.arc(100, 100, 20, 0, 1.5 * Math.PI);
+crc2.closePath();
+crc2.stroke();
+```
+
+### Ellipse
+```
+ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle)
+```
+
+### Lines
+- .moveTo(), .lineTo()
+
+### Text
+- .fillText(), .strokeText()
+- .font = "50px Arial";
+
+### Path
+```
+let path: Path2D = new Path2D();
+path.arc(60, 60, 50, 0, 2 * Math.PI);
+...
+crc2.stroke(path);
+```
+
+## Transformation
+- used to move obejects
+- changes Matrix
+- helpful when multible objects need to be placed, but the cooardinates are dependent on whe absolute koordinates
+- translate(), rotate(), scale()...
+
+- resetTransform() - Matrix is reset to original Matrix
+- save() - safe whole Matrix, restore() to saved Matrix later
+- save() can be called multiple times
+- restore() in opposite direction
+- getTransform() get condition of whole Matrix
+- safe inside variable (type: DOMMatrix) setTransform(...)
+
+### Gradient
+```
+  let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, 100);
+
+gradient.addColorStop(0, "black");
+gradient.addColorStop(.5, "red");
+gradient.addColorStop(1, "gold");
+
+crc2.fillStyle = gradient;
+crc2.fillRect(0, 0, 200, 100);
+```
+  
+
