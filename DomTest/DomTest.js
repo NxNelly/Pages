@@ -62,12 +62,14 @@ do{
 function createRectangle() {
     let rectangle = document.createElement('div');
     let color = "#" + getRandomColor();
-    rectangle.style.width = `50px`;
-    rectangle.style.height = `50px`;
+    let width = getRandomInt() + 20;
+    let height = getRandomInt() + 20;
+    rectangle.style.width = `${width}px`;
+    rectangle.style.height = `${height}px`;
     rectangle.style.backgroundColor = color;
     rectangle.style.position = 'absolute';
-    rectangle.style.left = `${getRandomInt()}px`;
-    rectangle.style.top = `${getRandomInt()}px`;
+    rectangle.style.left = `${Math.random() * (window.innerWidth - width)}px`;
+    rectangle.style.top = `${Math.random() * (window.innerHeight - height)}px`;
     document.body.appendChild(rectangle);
     for (let i = 0; i < 100; i++) {
         createRectangle();
